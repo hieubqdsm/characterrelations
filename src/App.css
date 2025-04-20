@@ -1,8 +1,8 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
@@ -175,4 +175,49 @@
 
 .react-flow__controls-button:last-child {
   border-bottom: 1px solid #ddd;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: var(--background);
+  border-bottom: 1px solid var(--border-color);
+  gap: 0.5rem;
+}
+
+.toolbar button {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-color);
+  background: var(--background);
+  color: var(--text);
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.toolbar button:hover {
+  background: var(--hover-background);
+}
+
+.toolbar button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.dark .toolbar {
+  background: var(--dark-background);
+}
+
+.dark .toolbar button {
+  background: var(--dark-background);
+  color: var(--dark-text);
+  border-color: var(--dark-border-color);
+}
+
+.dark .toolbar button:hover {
+  background: var(--dark-hover-background);
 }
