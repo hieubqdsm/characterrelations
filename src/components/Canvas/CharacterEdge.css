@@ -1,0 +1,43 @@
+.edge-label {
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.edge-label:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.edit-form input {
+  padding: 3px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.edit-form button {
+  padding: 3px 6px;
+  font-size: 12px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.edit-form button:last-child {
+  background: #f44336;
+}
+
+.display-content {
+  padding: 3px 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 150px;
+} 

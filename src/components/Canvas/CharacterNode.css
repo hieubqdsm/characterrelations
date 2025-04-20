@@ -1,0 +1,78 @@
+.character-node {
+  padding: 10px;
+  border-radius: 5px;
+  background: white;
+  border: 1px solid #ddd;
+  min-width: 200px;
+}
+
+.character-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edit-form input,
+.edit-form textarea {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.edit-form textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+
+.edit-form button {
+  padding: 5px 10px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.edit-form button:last-child {
+  background: #f44336;
+}
+
+.display-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.display-content h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.display-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.character-image {
+  max-width: 100%;
+  max-height: 100px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.display-content button {
+  padding: 5px 10px;
+  background: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  align-self: flex-start;
+} 

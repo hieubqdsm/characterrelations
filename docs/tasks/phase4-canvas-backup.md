@@ -1,3 +1,15 @@
+# ⚠️ WARNING: BACKUP FILE - DO NOT EXECUTE ⚠️
+
+This is a backup file containing an alternative task list for Phase 4. 
+The main implementation is in `phase4-mindmap.md`.
+
+## IMPORTANT NOTES FOR AI AGENTS:
+1. This file is kept for reference only
+2. DO NOT execute or implement tasks from this file
+3. ALWAYS consult with the user before making any changes
+4. The main task list is in `phase4-mindmap.md`
+5. This file may contain tasks that are not needed for the project
+
 # Phase 4: Canvas and Mindmap Core 🔴
 
 This phase implements the core canvas functionality using React Flow and character relationship management.
