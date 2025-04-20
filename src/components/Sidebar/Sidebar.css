@@ -1,0 +1,102 @@
+.sidebar {
+  width: 300px;
+  height: 100%;
+  background: var(--bg-primary);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease;
+  flex-shrink: 0; /* Prevent sidebar from shrinking */
+}
+
+.sidebar.collapsed {
+  width: 50px;
+}
+
+.sidebar-header {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg-primary);
+}
+
+.sidebar-header h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--text-primary);
+}
+
+.collapse-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+}
+
+.collapse-button:hover {
+  color: var(--text-primary);
+}
+
+.sidebar-content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+.panel {
+  margin-bottom: 1.5rem;
+}
+
+.panel h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.character-list,
+.relationship-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Hide text when collapsed */
+.sidebar.collapsed .sidebar-header h2,
+.sidebar.collapsed .panel h3,
+.sidebar.collapsed .character-list,
+.sidebar.collapsed .relationship-list {
+  display: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+  }
+
+  .sidebar.collapsed {
+    width: 100%;
+    min-height: 50px;
+  }
+
+  .sidebar-header {
+    padding: 0.75rem;
+  }
+
+  .sidebar-content {
+    padding: 0.75rem;
+  }
+
+  .sidebar.collapsed .sidebar-header h2 {
+    display: block;
+  }
+} 
